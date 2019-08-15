@@ -8,6 +8,6 @@ variable "auth_token" {
 variable "hostnames" {
   default = {
 	  "0" = "test1.tftestcpr"
-	  "1" = "test2.tftestcpr"
+	 # "1" = "test2.tftestcpr"
   }
 }

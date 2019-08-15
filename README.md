@@ -39,7 +39,20 @@ project_id = "[your_packet_project_id]"
 vars.tf
 default     = "[your_packet_API_key]"
 ```
-3. The default setup is for t1.small, please change this to your preferred device you may refer below
+3. Execute terraform commands
+
+```
+$ terraform init
+
+$ terraform plan
+
+$ terraform apply
+
+```
+
+4. Verify your server in the Packet portal
+
+5. The default setup is for t1.small, please change this to your preferred device you may refer below
 
 ```
 https://support.packet.com/kb/articles/custom-partitioning-raid

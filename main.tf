@@ -27,7 +27,7 @@ resource "packet_device" "web1" {
   facilities       = ["sjc1"]
   operating_system = "ubuntu_18_04"
   billing_cycle    = "hourly"
-  count            = "2"
+  #count            = "2"
   project_id       = "${local.project_id}"
   hardware_reservation_id = "next-available"
   storage = <<EOS
