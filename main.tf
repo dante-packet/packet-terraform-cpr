@@ -11,7 +11,7 @@ provider "packet" {
 # https://app.packet.net/projects/352000fb2-ee46-4673-93a8-de2c2bdba33b
 # .. then 352000fb2-ee46-4673-93a8-de2c2bdba33b is your project ID.
 locals {
-  project_id = "[your_packet_project_id]"
+  project_id = "e3123b01-0047-48ef-989e-c34a7bb6b9c3"
 }
 
 # If you want to create a fresh project, you can create one with packet_project
@@ -27,7 +27,7 @@ resource "packet_device" "web1" {
   facilities       = ["sjc1"]
   operating_system = "ubuntu_18_04"
   billing_cycle    = "hourly"
-  #count            = "2"
+  count            = "2"
   project_id       = "${local.project_id}"
   hardware_reservation_id = "next-available"
   storage = <<EOS
