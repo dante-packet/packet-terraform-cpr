@@ -52,7 +52,7 @@ $ terraform apply
 
 4. Verify your server in the Packet portal
 
-5. The default setup is for t1.small, please change this to your preferred device you may refer below
+5. The default setup is for t1.small. You change this to your preferred device type you may refer below for more guides
 
 ```
 https://support.packet.com/kb/articles/custom-partitioning-raid
