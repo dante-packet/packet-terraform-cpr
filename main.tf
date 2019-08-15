@@ -11,7 +11,7 @@ provider "packet" {
 # https://app.packet.net/projects/352000fb2-ee46-4673-93a8-de2c2bdba33b
 # .. then 352000fb2-ee46-4673-93a8-de2c2bdba33b is your project ID.
 locals {
-  project_id = "e3123b01-0047-48ef-989e-c34a7bb6b9c3"
+  project_id = "[your_packet_project_id]"
 }
 
 # If you want to create a fresh project, you can create one with packet_project
