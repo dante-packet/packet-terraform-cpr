@@ -5,9 +5,9 @@ variable "auth_token" {
 	default     = "jCsSBx3VhbyEf5uua2LuSFEQtTUdB1xd"
 }
 
-variable "hostnames" {
-  default = {
-	  "0" = "test1.tftestcpr1"
-	  "1" = "test2.tftestcpr1"
-  }
-}
+# variable "hostnames" {
+#   default = {
+# 	  "0" = "test1.tftestcpr1"
+# 	  "1" = "test2.tftestcpr1"
+#   }
+# }

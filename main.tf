@@ -1,7 +1,6 @@
 # Configure the Packet Provider. 
 provider "packet" {
    auth_token = "${var.auth_token}"
-  # auth_token = "jCsSBx3VhbyEf5uua2LuSFEQtTUdB1xd"
 }
 
 # Declare your project ID
@@ -11,7 +10,7 @@ provider "packet" {
 # https://app.packet.net/projects/352000fb2-ee46-4673-93a8-de2c2bdba33b
 # .. then 352000fb2-ee46-4673-93a8-de2c2bdba33b is your project ID.
 locals {
-  project_id = "e3123b01-0047-48ef-989e-c34a7bb6b9c3"
+  project_id = "[your_project_id]"
 }
 
 # If you want to create a fresh project, you can create one with packet_project
@@ -22,12 +21,13 @@ locals {
 
 # Create a device and add it to tf_project_1
 resource "packet_device" "web1" {
-  hostname         = "${lookup (var.hostnames, count.index)}"
+  # hostname         = "${lookup (var.hostnames, count.index)}"
+  hostname         = "test.cpr.tf"
   plan             = "t1.small.x86"
   facilities       = ["sjc1"]
   operating_system = "ubuntu_18_04"
   billing_cycle    = "hourly"
-  count            = "2"
+  # count            = "2"
   project_id       = "${local.project_id}"
   hardware_reservation_id = "next-available"
   storage = <<EOS
